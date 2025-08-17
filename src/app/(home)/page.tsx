@@ -34,6 +34,7 @@ function page() {
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </Head>
       <Hero />
+      <Event />
       <About />
       <StatementOfFaith />
       <Features />
@@ -46,7 +47,6 @@ function page() {
 
       <Testimonial />
 
-      <Event />
 
       <CTA />
     </div>
