@@ -1,101 +1,291 @@
-import Link from 'next/link'
-import React from 'react'
+"use client"
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  SparklesIcon,
+  TrophyIcon,
+  CalendarIcon,
+  ClockIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/outline";
+import { FaMedal, FaTrophy, FaCrown } from "react-icons/fa";
+import { GiCash, GiGoldBar } from "react-icons/gi";
+import { IconType } from "react-icons";
 
-function Event() {
-  return (
-    <div>
-        <section id="events" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-                <span className="inline-block px-4 py-1 bg-royal-100 text-royal-700 font-medium rounded-full text-sm mb-4">Stay Updated</span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Upcoming <span className="text-royal-700">Events</span> & News</h2>
-                <div className="w-20 h-1 bg-gold-400 mx-auto mb-8"></div>
-                <p className="max-w-3xl mx-auto text-gray-600 text-lg">
-                    Stay connected with the latest happenings, workshops, conferences, and devotionals in the CONCES community.
-                </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <div id="event-1" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
-                    <div className="relative h-48">
-                        <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fe568f5f4b-6023f8bab46c6f7178f3.png" alt="engineering workshop in Nigerian university setting, students learning together"/>
-                        <div className="absolute top-4 left-4 bg-royal-700 text-white rounded-lg px-3 py-1 text-sm font-bold">
-                            Sep 15, 2025
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <div className="flex items-center mb-3">
-                            <span className="text-xs font-medium bg-royal-100 text-royal-700 px-2 py-1 rounded">Workshop</span>
-                            <span className="text-xs text-gray-500 ml-auto">10:00 AM - 2:00 PM</span>
-                        </div>
-                        <h3 className="font-bold text-lg mb-2">Renewable Energy Solutions Workshop</h3>
-                        <p className="text-gray-600 text-sm mb-4">
-                            Learn practical skills for implementing sustainable energy solutions in underserved communities.
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <span className="text-sm text-gray-500">University of Lagos</span>
-                            <span className="text-royal-600 font-medium hover:text-royal-800 text-sm cursor-pointer">Register Now</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="event-2" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
-                    <div className="relative h-48">
-                        <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0233902786-78ce2c4f6bf1ee0ebab0.png" alt="prayer meeting in engineering lab, Nigerian students praying together"/>
-                        <div className="absolute top-4 left-4 bg-royal-700 text-white rounded-lg px-3 py-1 text-sm font-bold">
-                            Sep 20, 2023
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <div className="flex items-center mb-3">
-                            <span className="text-xs font-medium bg-royal-100 text-royal-700 px-2 py-1 rounded">Devotional</span>
-                            <span className="text-xs text-gray-500 ml-auto">6:00 PM - 7:30 PM</span>
-                        </div>
-                        <h3 className="font-bold text-lg mb-2">Engineers' Prayer & Bible Study</h3>
-                        <p className="text-gray-600 text-sm mb-4">
-                            Weekly virtual gathering for prayer, Bible study, and fellowship focused on engineering challenges.
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <span className="text-sm text-gray-500">Zoom Meeting</span>
-                            <span className="text-royal-600 font-medium hover:text-royal-800 text-sm cursor-pointer">Join Online</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="event-3" className="bg-white rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden">
-                    <div className="relative h-48">
-                        <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2aab9a5249-143fa64e0261f5d8ddb5.png" alt="engineering conference in Nigeria, professional setting with presentations"/>
-                        <div className="absolute top-4 left-4 bg-royal-700 text-white rounded-lg px-3 py-1 text-sm font-bold">
-                            Oct 5-7, 2023
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <div className="flex items-center mb-3">
-                            <span className="text-xs font-medium bg-royal-100 text-royal-700 px-2 py-1 rounded">Conference</span>
-                            <span className="text-xs text-gray-500 ml-auto">3-Day Event</span>
-                        </div>
-                        <h3 className="font-bold text-lg mb-2">Annual CONCES National Conference</h3>
-                        <p className="text-gray-600 text-sm mb-4">
-                            Join hundreds of Christian engineers for networking, learning, and spiritual growth.
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <span className="text-sm text-gray-500">Covenant University</span>
-                            <span className="text-royal-600 font-medium hover:text-royal-800 text-sm cursor-pointer">Learn More</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="text-center">
-                <Link href={"/events"} className="inline-block px-6 py-3 bg-royal-600 text-white font-bold rounded-lg hover:bg-royal-700 transition shadow hover:shadow-lg cursor-pointer">
-                    View All Events
-                </Link>
-            </div>
-        </div>
-    </section>
-
-    </div>
-  )
+interface FloatingRewardProps {
+  icon: IconType | React.ComponentType<{ className?: string }>;
+  delay?: number;
+  duration?: number;
 }
 
-export default Event
+const FloatingReward: React.FC<FloatingRewardProps> = ({
+  icon: Icon,
+  delay = 0,
+  duration = 4,
+}) => {
+  return (
+    <motion.div
+      className="absolute text-gold-400"
+      initial={{
+        y: Math.random() * 200 + 100,
+        x: Math.random() * 300 + 50,
+        opacity: 0,
+        scale: 0,
+      }}
+      animate={{
+        y: Math.random() * 150 + 50,
+        x: Math.random() * 400 + 100,
+        opacity: [0, 1, 1, 0],
+        scale: [0, 1.2, 1, 0],
+        rotate: [0, 180, 360],
+      }}
+      transition={{
+        duration,
+        delay,
+        repeat: Infinity,
+        repeatDelay: Math.random() * 5 + 3,
+      }}
+    >
+      <Icon className="w-8 h-8" />
+    </motion.div>
+  );
+};
+
+const EventsLogoBanner: React.FC = () => {
+  return (
+    <section
+      id="events"
+      className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900"
+    >
+      {/* Floating elements */}
+      <FloatingReward icon={GiCash} delay={0} />
+      <FloatingReward icon={FaCrown} delay={1} />
+      <FloatingReward icon={GiGoldBar} delay={1.5} />
+      <FloatingReward icon={FaTrophy} delay={2} />
+      <FloatingReward icon={SparklesIcon} delay={2.5} />
+
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 left-10 w-20 h-20 border-2 border-yellow-400 rotate-45"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-yellow-400 rounded-full"></div>
+        <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-purple-400 rounded-full"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center mb-6 px-4 py-2 bg-yellow-400/20 rounded-full border border-yellow-400/30"
+          >
+            <SparklesIcon className="w-5 h-5 mr-2 text-yellow-400" />
+            <span className="font-medium text-yellow-400">
+              Major Event Alert
+            </span>
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight"
+          >
+            CONCES Logo <span className="text-yellow-400">Rebrand</span>{" "}
+            Challenge
+          </motion.h2>
+
+          <div className="w-20 h-1 bg-yellow-400 mx-auto mb-8"></div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto text-gray-200 text-xl md:text-2xl mb-8"
+          >
+            Design the future face of Christian Engineering & Technology
+            students in Nigeria
+          </motion.p>
+
+          {/* Prize Highlight */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 px-8 py-4 rounded-2xl shadow-2xl">
+              <FaCrown className="w-8 h-8 mr-4 text-white" />
+              <div className="text-left">
+                <div className="text-3xl md:text-4xl font-bold text-white">
+                  Over ₦1,000,000
+                </div>
+                <div className="text-white/90 font-medium">
+                  in Total Prizes!
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Event Details Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto"
+        >
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-white/20">
+            <div className="relative h-64 md:h-80">
+              <img
+                className="w-full h-full object-cover"
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fe568f5f4b-6023f8bab46c6f7178f3.png"
+                alt="Logo design competition for CONCES"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute top-6 left-6 bg-yellow-500 text-black rounded-xl px-4 py-2 font-bold text-lg">
+                Competition Opens: Oct 1, 2025
+              </div>
+              <div className="absolute bottom-6 right-6 bg-black/70 text-white rounded-lg px-4 py-2">
+                <span className="text-sm font-medium">Submission Deadline</span>
+                <div className="text-lg font-bold">Dec 15, 2025</div>
+              </div>
+            </div>
+
+            <div className="p-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <div className="flex items-center mb-4">
+                    <CalendarIcon className="w-6 h-6 mr-3 text-yellow-400" />
+                    <div>
+                      <h4 className="text-white font-semibold text-lg">
+                        Competition Period
+                      </h4>
+                      <p className="text-gray-300">
+                        October 1 - December 15, 2025
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center mb-4">
+                    <MapPinIcon className="w-6 h-6 mr-3 text-yellow-400" />
+                    <div>
+                      <h4 className="text-white font-semibold text-lg">
+                        Submission
+                      </h4>
+                      <p className="text-gray-300">Online via CONCES Portal</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center mb-4">
+                    <TrophyIcon className="w-6 h-6 mr-3 text-yellow-400" />
+                    <div>
+                      <h4 className="text-white font-semibold text-lg">
+                        Winner Announcement
+                      </h4>
+                      <p className="text-gray-300">January 15, 2026</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <ClockIcon className="w-6 h-6 mr-3 text-yellow-400" />
+                    <div>
+                      <h4 className="text-white font-semibold text-lg">
+                        Judging Period
+                      </h4>
+                      <p className="text-gray-300">
+                        Dec 16, 2025 - Jan 14, 2026
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Prize Breakdown */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-white mb-6 text-center">
+                  Prize Breakdown
+                </h3>
+                <div className="grid sm:grid-cols-3 gap-4">
+                  {[
+                    {
+                      icon: FaCrown,
+                      prize: "₦500,000",
+                      place: "1st Place",
+                      color: "from-yellow-500 to-orange-500",
+                    },
+                    {
+                      icon: FaMedal,
+                      prize: "₦300,000",
+                      place: "2nd Place",
+                      color: "from-gray-400 to-gray-600",
+                    },
+                    {
+                      icon: FaTrophy,
+                      prize: "₦200,000",
+                      place: "3rd Place",
+                      color: "from-amber-600 to-orange-700",
+                    },
+                  ].map((item, index) => (
+                    <motion.div
+                      key={index}
+                      whileHover={{ scale: 1.05, y: -5 }}
+                      className={`bg-gradient-to-br ${item.color} p-6 rounded-xl text-center text-white shadow-lg`}
+                    >
+                      <item.icon className="w-8 h-8 mx-auto mb-3" />
+                      <div className="text-2xl font-bold mb-1">
+                        {item.prize}
+                      </div>
+                      <div className="text-sm opacity-90">{item.place}</div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Call to Action */}
+              <div className="text-center">
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-black font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 mr-4"
+                >
+                  Register Now - It's Free!
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300"
+                >
+                  View Competition Rules
+                </motion.button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <button className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            View All CONCES Events
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default EventsLogoBanner;

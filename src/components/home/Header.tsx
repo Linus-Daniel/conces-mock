@@ -10,15 +10,15 @@ import { User as UserInfo } from "next-auth";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
-  { name: "Events", href: "/events" },
-  { name: "Community", href: "/community" },
-  { name: "Resources", href: "/resources" },
-  { name: "Alumni", href: "/alumni" },
-  { name: "Testimony", href: "/testimony" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Executives", href: "/executives" },
+  { name: "About", href: "/" },
+  { name: "Blog", href: "/" },
+  { name: "Events", href: "/" },
+  { name: "Community", href: "/" },
+  { name: "Resources", href: "/" },
+  { name: "Alumni", href: "/" },
+  { name: "Testimony", href: "/" },
+  { name: "Gallery", href: "/" },
+  { name: "Executives", href: "/" },
 ];
 
 function Header({ user }: { user: UserInfo | null }) {
@@ -103,9 +103,8 @@ function Header({ user }: { user: UserInfo | null }) {
                 key={index}
                 href={link.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  pathname === link.href
-                    ? "bg-primary-light text-white"
-                    : "text-gray-900 hover:bg-primary-light hover:text-white"
+            
+                     "text-gray-900 hover:bg-primary-light hover:text-white"
                 }`}
               >
                 {link.name}
@@ -113,7 +112,7 @@ function Header({ user }: { user: UserInfo | null }) {
             ))}
           </nav>
 
-          {/* Desktop Auth Buttons or User Info */}
+{/*         
           <div className="hidden lg:flex items-center space-x-3">
             {user ? (
               <div className="flex items-center space-x-2 user-dropdown">
@@ -164,7 +163,7 @@ function Header({ user }: { user: UserInfo | null }) {
                 </Link>
               </>
             )}
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="flex lg:hidden">
@@ -222,7 +221,7 @@ function Header({ user }: { user: UserInfo | null }) {
                 </Link>
               ))}
             </nav>
-
+{/* 
             <div className="mt-auto pt-4 border-t">
               {user ? (
                 <>
@@ -270,7 +269,7 @@ function Header({ user }: { user: UserInfo | null }) {
                   </Link>
                 </>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
 

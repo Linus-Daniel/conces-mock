@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Hero() {
   return (
      
-    <section id="hero" className="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden bg-gradient-to-br from-royal-900 via-royal-800 to-royal-700">
+    <section id="hero-section" className="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden bg-gradient-to-br from-royal-900 via-royal-800 to-royal-700">
         <div className="absolute inset-0 opacity-10">
             <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/856b1ebcc9-360a76c7ac3243855703.png" alt="abstract pattern with Nigerian university campus, subtle cross symbols, and engineering icons in blue and gold color scheme"/>
         </div>
