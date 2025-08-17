@@ -251,21 +251,23 @@ const EventsLogoBanner: React.FC = () => {
 
               {/* Call to Action */}
               <div className="text-center">
-                <motion.button
+                <motion.a
+                href="https://conces-contest.vercel.app/signup"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-black font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 mr-4"
                 >
                   Register Now - It's Free!
-                </motion.button>
+                </motion.a>
 
-                <motion.button
+                <motion.a
+                href="https://conces-contest.vercel.app"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300"
                 >
                   View Competition Rules
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </div>
