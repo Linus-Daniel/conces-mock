@@ -23,7 +23,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { SessionProvider } from "next-auth/react";
-import {SocketProvider} from "../../context/SocketContext";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -132,7 +131,7 @@ const DashboardLayout = ({ children }: LayoutProps) => {
       <main className="flex-1 overflow-y-auto p-1 pt-20 lg:pt-6">
         <div className=" text-gray-900 shadow p-4 rounded-lg min-h-[300px]">
           <SessionProvider>
-            <SocketProvider>{children}</SocketProvider>
+            {children}
           </SessionProvider>
         </div>
       </main>
