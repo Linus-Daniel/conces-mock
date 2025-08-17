@@ -45,7 +45,7 @@ function page() {
 
       <Sponsor />
 
-      <Testimonial />
+      {/* <Testimonial />/ */}
 
 
       <CTA />
