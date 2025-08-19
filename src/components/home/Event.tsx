@@ -250,7 +250,7 @@ const EventsLogoBanner: React.FC = () => {
               </div>
 
               {/* Call to Action */}
-              <div className="text-center">
+              <div className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 mt-8">
                 <motion.a
                 href="https://conces-contest.vercel.app/signup"
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -273,18 +273,7 @@ const EventsLogoBanner: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <button className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-            View All CONCES Events
-          </button>
-        </motion.div>
+      
       </div>
     </section>
   );
