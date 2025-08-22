@@ -132,8 +132,8 @@ const EventsLogoBanner: React.FC = () => {
           >
             <div className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl">
               <FaCrown className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mr-2 sm:mr-3 md:mr-4 text-white" />
-              <div className="text-left">
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+              <div className="text-center">
+                <div className="text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                   Over ₦1,000,000
                 </div>
                 <div className="text-white/90 text-sm sm:text-base font-medium">
@@ -161,14 +161,14 @@ const EventsLogoBanner: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-yellow-500 text-black rounded-lg sm:rounded-xl px-3 py-1 sm:px-4 sm:py-2 font-bold text-sm sm:text-base md:text-lg">
-                Competition Opens: Oct 1, 2025
+                Competition Opens: Sept 7, 2025
               </div>
               <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-black/70 text-white rounded-md sm:rounded-lg px-3 py-1 sm:px-4 sm:py-2">
                 <span className="text-xs sm:text-sm font-medium">
                   Submission Deadline
                 </span>
                 <div className="text-base sm:text-lg font-bold">
-                  Dec 15, 2025
+                  Oct 7, 2025
                 </div>
               </div>
             </div>
@@ -200,13 +200,24 @@ const EventsLogoBanner: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                  <div className="flex items-start">
+                    <ClockIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
+                    <div>
+                      <h4 className="text-white font-semibold text-base sm:text-lg">
+                        Voting Period
+                      </h4>
+                      <p className="text-gray-300 text-sm sm:text-base">
+                        Dec 16, 2025 - Jan 14, 2026
+                      </p>
+                    </div>
+                  </div>
 
-                <div className="mt-4 md:mt-0">
+                <div className=" md:mt-0">
                   <div className="flex items-start mb-4">
                     <TrophyIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
                     <div>
                       <h4 className="text-white font-semibold text-base sm:text-lg">
-                        Winner Announcement
+                        Grand Finale
                       </h4>
                       <p className="text-gray-300 text-sm sm:text-base">
                         January 15, 2026
@@ -214,17 +225,6 @@ const EventsLogoBanner: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <ClockIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
-                    <div>
-                      <h4 className="text-white font-semibold text-base sm:text-lg">
-                        Judging Period
-                      </h4>
-                      <p className="text-gray-300 text-sm sm:text-base">
-                        Dec 16, 2025 - Jan 14, 2026
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -243,13 +243,13 @@ const EventsLogoBanner: React.FC = () => {
                     },
                     {
                       icon: FaMedal,
-                      prize: "₦300,000",
+                      prize: "₦150,000",
                       place: "2nd Place",
                       color: "from-gray-400 to-gray-600",
                     },
                     {
                       icon: FaTrophy,
-                      prize: "₦200,000",
+                      prize: "₦100,000",
                       place: "3rd Place",
                       color: "from-amber-600 to-orange-700",
                     },
@@ -274,7 +274,7 @@ const EventsLogoBanner: React.FC = () => {
               {/* Call to Action */}
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6 sm:mt-8">
                 <motion.a
-                  href="https://conces-contest.vercel.app/signup"
+                  href="https://brandchallenge.conces.org/signup"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-black font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
@@ -283,7 +283,7 @@ const EventsLogoBanner: React.FC = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://conces-contest.vercel.app"
+                  href="https://brandchallenge.conces.org"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl text-base sm:text-lg transition-all duration-300 text-center"

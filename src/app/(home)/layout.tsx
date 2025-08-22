@@ -10,6 +10,7 @@ import type { User } from "next-auth";
 export const metadata: Metadata = {
   title: "Conces",
   description: "faithful and committed to the cause of Christ",
+  icons: { icon: "/images/logo.png" },
 };
 
 interface RootLayoutProps {
@@ -23,9 +24,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className="antialiased">
-        <HomeLayout user={user}>
-          {children}
-        </HomeLayout>
+        <HomeLayout user={user}>{children}</HomeLayout>
       </body>
     </html>
   );

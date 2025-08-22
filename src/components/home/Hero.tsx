@@ -83,10 +83,10 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="w-full md:w-auto"
           >
-            <div className="bg-yellow-500/90 text-blue-900 px-4 py-2 rounded-full text-center text-xs sm:text-sm font-medium flex items-center justify-center shadow-md">
+            <div className="bg-yellow-500/90 text-blue-900 px-4 py-2  rounded-full text-center text-md sm:text-sm font-medium flex items-center justify-center shadow-md">
               <FaPaintBrush className="mr-2 flex-shrink-0" />
-              <span className="truncate">
-                We're rebuilding! Exciting new features coming soon
+              <span className="">
+                We're rebuilding! CTAs and features are coming soon.
               </span>
             </div>
           </motion.div>
@@ -97,7 +97,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="w-full md:w-auto"
           >
-            <Link href="https://conces-contest.vercel.app" passHref>
+            <Link href="https://brandchallenge.conces.org" passHref>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -156,7 +156,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <Link href="/join/student" passHref>
+              <p>
                 <motion.button
                   whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -165,8 +165,8 @@ export default function Hero() {
                   <FaGraduationCap className="mr-2" />
                   Join as Student
                 </motion.button>
-              </Link>
-              <Link href="/join/alumnus" passHref>
+              </p>
+              <p>
                 <motion.button
                   whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -175,7 +175,7 @@ export default function Hero() {
                   <FaUsers className="mr-2" />
                   Join as Alumnus
                 </motion.button>
-              </Link>
+              </p>
             </motion.div>
           </div>
 
@@ -246,25 +246,22 @@ export default function Hero() {
             {[
               {
                 icon: GiCash,
-                title: "Cash Prize",
+                title: "1st Winner",
                 amount: "₦500,000",
-                description: "Life-changing seed money",
                 color: "text-green-400",
                 delay: 0.1,
               },
               {
                 icon: GiGoldBar,
-                title: "Gold Package",
-                amount: "Value ₦250,000",
-                description: "Premium engineering tools",
+                title: "Runner up",
+                amount: " ₦250,000",
                 color: "text-yellow-400",
                 delay: 0.2,
               },
               {
                 icon: FaAward,
-                title: "Career Boost",
-                amount: "Exclusive Opportunities",
-                description: "Industry recognition & mentorship",
+                title: "₦Third Place",
+                amount: "100,000",
                 color: "text-blue-400",
                 delay: 0.3,
               },
@@ -301,7 +298,7 @@ export default function Hero() {
             viewport={{ once: true }}
             className="mt-8 text-center"
           >
-            <Link href="https://conces-contest.vercel.app" passHref>
+            <Link href="https://brandchallenge.conces.org" passHref>
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}

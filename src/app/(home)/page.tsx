@@ -38,12 +38,12 @@ function page() {
       <About />
       <StatementOfFaith />
       <Features />
-      <Anthem />
+      {/* <Anthem /> */}
 
-      <Shop />
-      <Donate />
+      {/* <Shop /> */}
+      {/* <Donate /> */}
 
-      <Sponsor />
+      {/* <Sponsor /> */}
 
       {/* <Testimonial />/ */}
 
