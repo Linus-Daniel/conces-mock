@@ -284,9 +284,7 @@ export default function Hero() {
                 <p className="text-2xl font-bold text-yellow-400 mb-2">
                   {item.amount}
                 </p>
-                <p className="text-blue-100 text-sm sm:text-base">
-                  {item.description}
-                </p>
+              
               </motion.div>
             ))}
           </div>
