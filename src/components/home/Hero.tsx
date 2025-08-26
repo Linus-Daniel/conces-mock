@@ -254,7 +254,7 @@ export default function Hero() {
               {
                 icon: GiGoldBar,
                 title: "Runner up",
-                amount: " ₦250,000",
+                amount: " ₦150,000",
                 color: "text-yellow-400",
                 delay: 0.2,
               },
