@@ -183,7 +183,7 @@ const EventsLogoBanner: React.FC = () => {
                         Competition Period
                       </h4>
                       <p className="text-gray-300 text-sm sm:text-base">
-                        October 1 - December 15, 2025
+                        September 7 - October 7, 2025
                       </p>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ const EventsLogoBanner: React.FC = () => {
                           Grand Finale
                         </h4>
                         <p className="text-gray-300 text-sm sm:text-base">
-                          November 7, 2026
+                          November 7, 2025
                         </p>
                       </div>
                     </div>
