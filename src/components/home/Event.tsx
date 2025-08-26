@@ -241,6 +241,8 @@ const EventsLogoBanner: React.FC = () => {
                       icon: FaCrown,
                       prize: "₦500,000",
                       place: "1st Place",
+
+                      
                       color: "from-yellow-500 to-orange-500",
                     },
                     {
