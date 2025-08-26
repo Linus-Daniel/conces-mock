@@ -1,4 +1,5 @@
 import React from "react";
+import { FaYoutube } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 // Footer data (easy to extend later)
@@ -41,6 +42,10 @@ const socialLinks = [
   {
     icon: <FaTwitter />,
     href: "https://x.com/concesofficial?t=l3hLqtzs5ZHcgBrUV0PfNw&s=09",
+  },
+  {
+    icon: <FaYoutube />,
+    href: "https://youtube.com/@concesofficial",
   },
 ];
 
