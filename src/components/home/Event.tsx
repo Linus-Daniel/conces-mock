@@ -200,7 +200,9 @@ const EventsLogoBanner: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                  <div className="flex items-start">
+
+                <div>
+                  <div className="flex items-start mb-4">
                     <ClockIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
                     <div>
                       <h4 className="text-white font-semibold text-base sm:text-lg">
@@ -212,19 +214,19 @@ const EventsLogoBanner: React.FC = () => {
                     </div>
                   </div>
 
-                <div className=" md:mt-0">
-                  <div className="flex items-start mb-4">
-                    <TrophyIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
-                    <div>
-                      <h4 className="text-white font-semibold text-base sm:text-lg">
-                        Grand Finale
-                      </h4>
-                      <p className="text-gray-300 text-sm sm:text-base">
-                        November 7, 2026
-                      </p>
+                  <div className=" md:mt-0">
+                    <div className="flex items-start mb-4">
+                      <TrophyIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-yellow-400 mt-0.5" />
+                      <div>
+                        <h4 className="text-white font-semibold text-base sm:text-lg">
+                          Grand Finale
+                        </h4>
+                        <p className="text-gray-300 text-sm sm:text-base">
+                          November 7, 2026
+                        </p>
+                      </div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
