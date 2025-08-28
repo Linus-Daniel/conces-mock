@@ -287,7 +287,7 @@ const EventsLogoBanner: React.FC = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://brandchallenge.conces.org"
+                  href="https://brandchallenge.conces.org/terms"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl text-base sm:text-lg transition-all duration-300 text-center"

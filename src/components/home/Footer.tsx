@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 // Footer data (easy to extend later)
 const footerSections = [
@@ -40,7 +40,7 @@ const socialLinks = [
     href: "https://www.instagram.com/concesofficial?igsh=MXZ4aW5wb2Q5M2IxNg==",
   },
   {
-    icon: <FaTwitter />,
+    icon: <FaXTwitter />,
     href: "https://x.com/concesofficial?t=l3hLqtzs5ZHcgBrUV0PfNw&s=09",
   },
   {
