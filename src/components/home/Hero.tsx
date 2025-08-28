@@ -214,7 +214,7 @@ export default function Hero() {
         </div>
 
         {/* Wowing Prize Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -308,7 +308,7 @@ export default function Hero() {
               </motion.button>
             </Link>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
