@@ -154,7 +154,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <p>
                 <motion.button
@@ -162,7 +162,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.98 }}
                   className="px-6 sm:px-8 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-blue-900 font-bold rounded-lg hover:shadow-xl transition-all shadow-lg flex items-center justify-center"
                 >
-                  <FaGraduationCap className="mr-2" />
+                  <FaGraduationCap className="mr-2 hidden sm:block" />
                   Join as Student
                 </motion.button>
               </p>
@@ -172,7 +172,7 @@ export default function Hero() {
                   whileTap={{ scale: 0.98 }}
                   className="px-6 sm:px-8 py-3 bg-white/20 backdrop-blur-sm text-white font-bold rounded-lg hover:bg-white/30 transition-all shadow-lg hover:shadow-xl flex items-center justify-center"
                 >
-                  <FaUsers className="mr-2" />
+                  <FaUsers className="mr-2 hidden sm:block" />
                   Join as Alumnus
                 </motion.button>
               </p>
